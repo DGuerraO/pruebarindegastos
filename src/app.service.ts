@@ -16,7 +16,7 @@ export class AppService {
       const d = response.data;
       const exchangeTo = d[`${to}_${from}`];
       const convertedAmount = (amount/exchangeTo).toFixed(2);
-      const objResponse = JSON.stringify({ from, to, convertedAmount });
+      const objResponse = this.output({ from, to, convertedAmount });
       return objResponse;    
     } catch (err) {
       console.error(err);
@@ -48,26 +48,27 @@ export class AppService {
     // Transformar segundos a días
     let days = Math.floor(diff/(1000*60*60*24));
 
-    return days;
+    return this.output({ daysRemaining: days });
   }
 
   // EJERCICIO 3
   getTheNumber(first, second) {
     let final: string = '';
-    for (let i = 1;i <= second;i++) {
+    for (let i = 1; i <= second; i++) {
       final = final + (first*i);
     }
     
     let largo = final.length;
   
-    // Se evalua si el largo del string es mayor a 9, si lo es el string es cortado en 9 dígitos.
-    if(largo > 9){  
-      final = final.slice(0,9);    
-     return final;
-    }else{
-     return final;
+    // Evaluar si el largo del string es mayor a 9, si lo es el string es cortado en 9 dígitos.
+    if (largo > 9) {  
+      final = final.slice(0, 9);    
     }
     
+    return this.output({ finalNumber: final });
   }
 
+  output(data) {
+    return JSON.stringify(data);
+  }
 }

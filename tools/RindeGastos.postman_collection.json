@@ -1,0 +1,315 @@
+{
+	"info": {
+		"_postman_id": "58ac2748-abb4-4ecf-87db-66f8fb43affd",
+		"name": "RindeGastos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getTheNumber",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"Testing Nest\",\r\n    \"description\": \"ajajkajk\",\r\n    \"done\":false\r\n}"
+				},
+				"url": {
+					"raw": "localhost:3000/getTheNumber/192/3",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"getTheNumber",
+						"192",
+						"3"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "getTheNumber",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"Testing Nest\",\r\n    \"description\": \"ajajkajk\",\r\n    \"done\":false\r\n}"
+						},
+						"url": {
+							"raw": "localhost:3000/getTheNumber/192/3",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"getTheNumber",
+								"192",
+								"3"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "27"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1b-3UaNSUIH3Gf4cNYjW8DhCZLk1/Y\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 23 Feb 2022 00:50:23 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [
+						{
+							"expires": "Invalid Date"
+						}
+					],
+					"body": "{\n    \"finalNumber\": \"192384576\"\n}"
+				}
+			]
+		},
+		{
+			"name": "getDaysUntilMyBirthday",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"Testing Nest\",\r\n    \"description\": \"ajajkajk\",\r\n    \"done\":false\r\n}"
+				},
+				"url": {
+					"raw": "localhost:3000/getDaysUntilMyBirthday/15-03-1989",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"getDaysUntilMyBirthday",
+						"15-03-1989"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "getDaysUntilMyBirthday",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"Testing Nest\",\r\n    \"description\": \"ajajkajk\",\r\n    \"done\":false\r\n}"
+						},
+						"url": {
+							"raw": "localhost:3000/getDaysUntilMyBirthday/15-03-1989",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"getDaysUntilMyBirthday",
+								"15-03-1989"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "20"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"14-iUI0d8m2AOQrL1FDmmF7OeM/pcI\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 23 Feb 2022 00:54:30 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [
+						{
+							"expires": "Invalid Date"
+						}
+					],
+					"body": "{\n    \"daysRemaining\": 20\n}"
+				}
+			]
+		},
+		{
+			"name": "getConvertedAmount",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"Testing Nest\",\r\n    \"description\": \"ajajkajk\",\r\n    \"done\":false\r\n}"
+				},
+				"url": {
+					"raw": "localhost:3000/getConvertedAmount/CLP/USD/15000",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"getConvertedAmount",
+						"CLP",
+						"USD",
+						"15000"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "getConvertedAmount",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"Testing Nest\",\r\n    \"description\": \"ajajkajk\",\r\n    \"done\":false\r\n}"
+						},
+						"url": {
+							"raw": "localhost:3000/getConvertedAmount/CLP/USD/15000",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"getConvertedAmount",
+								"CLP",
+								"USD",
+								"15000"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "51"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"33-5gUvJ26TmMyjWHuCMsocfvnkeq8\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 23 Feb 2022 00:56:38 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [
+						{
+							"expires": "Invalid Date"
+						}
+					],
+					"body": "{\n    \"from\": \"CLP\",\n    \"to\": \"USD\",\n    \"convertedAmount\": \"18.92\"\n}"
+				}
+			]
+		}
+	]
+}
