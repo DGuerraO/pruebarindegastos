@@ -1,13 +1,8 @@
-import { Injectable,Param } from '@nestjs/common';
+import { Injectable } from '@nestjs/common';
 import axios from 'axios';
-import { json } from 'stream/consumers';
 
 @Injectable()
 export class AppService {
-  /*getHello(): string {
-    return 'Hello World!';
-  }*/
-
   // EJERCICIO 1
   async getConvertedAmount(from, to, amount) {
     try {
@@ -41,7 +36,7 @@ export class AppService {
     if (today.getTime() > myBirthday.getTime()) {
       myBirthday.setFullYear(myBirthday.getFullYear()+1);
     }
-  
+
     // Calcular diferencia de tiempo
     let diff = myBirthday.getTime() - today.getTime();
 
@@ -57,14 +52,14 @@ export class AppService {
     for (let i = 1; i <= second; i++) {
       final = final + (first*i);
     }
-    
+
     let largo = final.length;
-  
+
     // Evaluar si el largo del string es mayor a 9, si lo es el string es cortado en 9 dígitos.
     if (largo > 9) {  
       final = final.slice(0, 9);    
     }
-    
+
     return this.output({ finalNumber: final });
   }
 

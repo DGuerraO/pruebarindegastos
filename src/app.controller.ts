@@ -1,17 +1,9 @@
-import { Controller, Get,Param } from '@nestjs/common';
-import { concat } from 'rxjs';
+import { Controller, Get, Param } from '@nestjs/common';
 import { AppService } from './app.service';
-import axios from 'axios';
 
 @Controller()
 export class AppController {
   constructor(private readonly appService: AppService) {}
-
-
-  /*@Get()
-  getHello(): string {
-    return this.appService.getHello();
-  }/*
 
   /* https://localhost:3000/getConvertedAmount/CLP/USD/15000 */
 
@@ -33,5 +25,4 @@ export class AppController {
   getTheNumber(@Param('first') first: number, @Param('second') second: number) {
     return this.appService.getTheNumber(first, second);
   }
-
 }
